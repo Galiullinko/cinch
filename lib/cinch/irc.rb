@@ -112,7 +112,7 @@ module Cinch
     # @return [void]
     # @since 2.0.0
     def send_cap_req
-      caps = [:"away-notify", :"multi-prefix", :sasl] & @network.capabilities
+      caps = [:"away-notify", :"multi-prefix", :sasl] & @bot.config.caps & @network.capabilities
 
       # InspIRCd doesn't respond to empty REQs, so send an END in that
       # case.

@@ -40,6 +40,7 @@ module Cinch
           :dcc => Configuration::DCC.new,
           :sasl => Configuration::SASL.new,
           :shared => {},
+          :caps => [],
         }
       end
     end
